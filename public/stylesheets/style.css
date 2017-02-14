@@ -1,0 +1,49 @@
+body {
+    padding: 15px;
+    font-family: 'VT323';
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    cursor: default;
+}
+
+input {
+    margin-top: 5px;
+    font-family: 'VT323';
+    font-size: 18px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 75%;
+    cursor: default;
+}
+
+input:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#prompt li {
+    display: inline;
+}
+
+.blink {
+    display: inline;
+    animation: blink-animation 0.75s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.75s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
